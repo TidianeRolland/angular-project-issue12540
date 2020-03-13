@@ -8,7 +8,11 @@
 /bazel-out
 
 # dependencies
-/node_modules
+!/node_modules
+/node_modules/*
+!/node_modules/@angular
+/node_modules/@angular/*
+!/node_modules/@angular/forms
 
 # profiling files
 chrome-profiler-events*.json
