@@ -1,10 +1,11 @@
 <div [formGroup]="form">
-  <p>Typing a number in this first box then pressing tab will trigger one value change to be console.logged :)</p>
+  <p>Typing in this first box then pressing tab will trigger one value change to be console.logged</p>
   <div>
-    <input [type]="'number'" formControlName="happy" />
+    <input type="text" formControlName="first" />
   </div>
-  <p>Typing a number in this second box then pressing tab will trigger two value change to be console.logged :(</p>
+  <p>Typing a number in this second box then pressing tab used to trigger two value change to be console.logged.
+    Now it's fixed :)</p>
   <div>
-    <input type="number" formControlName="sad" />
+    <input type="number" formControlName="fix" />
   </div>
 </div>

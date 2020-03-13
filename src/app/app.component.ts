@@ -9,21 +9,21 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class AppComponent implements OnInit {
   title = 'angular-project-issue12540';
 
-  happyControl = new FormControl(null);
-  
-  sadControl = new FormControl(null);
+  firstControl = new FormControl(null);
+
+  fixedControl = new FormControl(null);
 
   form = new FormGroup({
-    happy: this.happyControl,
-    sad: this.sadControl,
+    first: this.firstControl,
+    fix: this.fixedControl,
   });
 
   ngOnInit(): void {
-    this.happyControl.valueChanges
-    .subscribe(x => console.log("Happy (" + typeof x + "): " + x));
+    this.firstControl.valueChanges
+    .subscribe(x => console.log(" (" + typeof x + "): " + x));
 
-    this.sadControl.valueChanges
-    .subscribe(x => console.log("Sad (" + typeof x + "): " + x));
+    this.fixedControl.valueChanges
+    .subscribe(x => console.log(" (" + typeof x + "): " + x));
 
   }
 }
